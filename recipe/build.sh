@@ -2,7 +2,7 @@
 
 set -ex
 
-mkdir build
+mkdir -p build
 pushd build
 cmake ${CMAKE_ARGS} -GNinja \
   -DCMAKE_PREFIX_PATH=$PREFIX \
@@ -13,6 +13,6 @@ cmake ${CMAKE_ARGS} -GNinja \
   ..
 ninja install
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" != "1" ]]; then
-  ctest -E tls_download_medium_file_h2
+  ctest --output-on-failure -E tls_download_medium_file_h2
 fi
 popd

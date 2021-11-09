@@ -4,5 +4,5 @@ __migrator:
   migration_number: 1
   automerge: true
 aws_c_common:
-- 0.6.16
-migrator_ts: 1635949190.9097204
+- 0.6.17
+migrator_ts: 1636000142.5247486

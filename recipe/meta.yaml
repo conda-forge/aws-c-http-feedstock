@@ -1,12 +1,11 @@
-{% set name = "aws-c-http" %}
 {% set version = "0.6.23" %}
 
 package:
-  name: {{ name|lower }}
+  name: aws-c-http
   version: {{ version }}
 
 source:
-  url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/awslabs/aws-c-http/archive/v{{ version }}.tar.gz
   sha256: cac4493a910b04c883afd1f3e1d842fb5810ea6ea358c970c12190b78a245bbe
   patches:
     # backport https://github.com/awslabs/aws-c-http/issues/393

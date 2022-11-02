@@ -1,4 +1,4 @@
-{% set version = "0.6.23" %}
+{% set version = "0.6.24" %}
 
 package:
   name: aws-c-http
@@ -6,13 +6,10 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v{{ version }}.tar.gz
-  sha256: cac4493a910b04c883afd1f3e1d842fb5810ea6ea358c970c12190b78a245bbe
-  patches:
-    # backport https://github.com/awslabs/aws-c-http/issues/393
-    - patches/Empty-path.patch
+  sha256: 87c636bafef2f90076f4a91c257178e64e77d75c628fb87e057377515f0f8cd7
 
 build:
-  number: 4
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-c-http", max_pin="x.x.x") }}
 

@@ -3,7 +3,7 @@ BUILD:
 aws_c_common:
 - 0.8.5
 aws_c_io:
-- 0.13.9
+- 0.13.10
 c_compiler:
 - gcc
 c_compiler_version:

@@ -1,4 +1,4 @@
-{% set version = "0.6.27" %}
+{% set version = "0.6.28" %}
 
 package:
   name: aws-c-http
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v{{ version }}.tar.gz
-  sha256: 0b770a2e0e44acfd8e672da48dd998d851e39da1e02a238da22fa04d0f986739
+  sha256: f6acd38862898d491823b25ad938dd7af26fe13152964828b1d2b786913a6171
 
 build:
-  number: 3
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-c-http", max_pin="x.x.x") }}
 

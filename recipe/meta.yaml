@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: aws-c-http
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v{{ version }}.tar.gz
-  sha256: 9c2fcd99a792b35ae94834987de9393e5b550c737eb49ef598a981709421ac37
+  sha256: ec2623d6cf9fa4f3513a05edaefc6995ce607b39671ab4d62d6a7afa5c639f93
 
 build:
   number: 0

@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.3" %}
 
 package:
   name: aws-c-http
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v{{ version }}.tar.gz
-  sha256: 9c2fcd99a792b35ae94834987de9393e5b550c737eb49ef598a981709421ac37
+  sha256: 07e16c6bf5eba6f0dea96b6f55eae312a7c95b736f4d2e4a210000f45d8265ae
 
 build:
   number: 1
@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - ninja
   host:
+    - aws-c-cal
     - aws-c-common
     - aws-c-compression
     - aws-c-io

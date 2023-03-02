@@ -1,11 +1,11 @@
-About aws-c-http
-================
+About aws-c-http-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-http-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awslabs/aws-c-http
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-http-feedstock/blob/main/LICENSE.txt)
 
 Summary: C99 implementation of the HTTP/1.1 and HTTP/2 specifications
 

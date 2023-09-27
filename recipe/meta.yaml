@@ -9,7 +9,7 @@ source:
   sha256: 696b1d0c3add8d6bccae74157cb363ea37ff644226a163038353e44b9ad1f2fc
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-c-http", max_pin="x.x.x") }}
 

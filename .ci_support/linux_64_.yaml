@@ -5,7 +5,7 @@ aws_c_common:
 aws_c_compression:
 - 0.2.18
 aws_c_io:
-- 0.14.9
+- 0.14.10
 c_compiler:
 - gcc
 c_compiler_version:
@@ -13,9 +13,9 @@ c_compiler_version:
 c_stdlib:
 - sysroot
 c_stdlib_version:
-- '2.12'
+- '2.17'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:

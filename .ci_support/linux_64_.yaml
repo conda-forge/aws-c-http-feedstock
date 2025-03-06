@@ -3,7 +3,7 @@ aws_c_cal:
 aws_c_common:
 - 0.11.2
 aws_c_compression:
-- 0.3.0
+- 0.3.1
 aws_c_io:
 - 0.17.0
 c_compiler:

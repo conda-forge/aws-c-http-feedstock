@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.5"
+  version: "0.9.6"
 
 package:
   name: aws-c-http
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v${{ version }}.tar.gz
-  sha256: cbdb8411b439677f302d3a3b4691e2dc1852e69f406d3c2fced2be95ae2397f9
+  sha256: 39381e7b66d73b5dcf8b3afe533f3206349a7e8f0fb78c8bac469bee0f05b957
 
 build:
   number: 0
@@ -31,14 +31,13 @@ requirements:
 tests:
   - script:
       - if: unix
-        then: test -f $PREFIX/lib/libaws-c-http${SHLIB_EXT}
-      - if: unix
-        then: test -f $PREFIX/include/aws/http/http.h
+        then:
+          - test -f $PREFIX/lib/libaws-c-http${SHLIB_EXT}
+          - test -f $PREFIX/include/aws/http/http.h
       - if: win
-        then: if not exist %LIBRARY_INC%\\aws\\http\\http.h exit 1
-      - if: win
-        then: if not exist %PREFIX%\\Library\\bin\\aws-c-http.dll exit 1
-
+        then:
+          - if not exist %LIBRARY_INC%\\aws\\http\\http.h exit 1
+          - if not exist %PREFIX%\\Library\\bin\\aws-c-http.dll exit 1
 about:
   license: Apache-2.0
   license_file: LICENSE

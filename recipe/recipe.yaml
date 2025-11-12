@@ -12,7 +12,7 @@ source:
   sha256: ce9e71c3eae67b1c6c0149278e0d0929a7d928c3547de64999430c8592864ad4
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -43,6 +43,7 @@ about:
   license_file: LICENSE
   summary: C99 implementation of the HTTP/1.1 and HTTP/2 specifications
   homepage: https://github.com/awslabs/aws-c-http
+  repository: https://github.com/awslabs/aws-c-http
 
 extra:
   recipe-maintainers:

@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: C99 implementation of the HTTP/1.1 and HTTP/2 specifications
 
+Development: https://github.com/awslabs/aws-c-http
+
 Current build status
 ====================
 

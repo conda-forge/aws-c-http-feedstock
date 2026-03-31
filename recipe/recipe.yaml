@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.13"
+  version: "0.10.14"
 
 package:
   name: aws-c-http
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v${{ version }}.tar.gz
-  sha256: d8352e7a1fb1996694a4dc31219ce03452882abf8d0858c104727f975e11b9c7
+  sha256: d44866920b89e07b9db17e9c84587c6dca6c796d691597f1bee5e17b16b79d39
 
 build:
   number: 0

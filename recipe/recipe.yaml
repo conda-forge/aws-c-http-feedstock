@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.1"
+  version: "1.0.0"
 
 package:
   name: aws-c-http
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-http/archive/v${{ version }}.tar.gz
-  sha256: 2988843d5c95d92249d40e59480c2a4376533a91d8e38a5106dc4da5a8720ce5
+  sha256: ae992d9f24a88430cdd4b7538fab565e71faedb1f156f38d6a74f2a77269417f
 
 build:
   number: 1
@@ -26,7 +26,7 @@ requirements:
     - aws-c-compression
     - aws-c-io
   run_exports:
-    - ${{ pin_subpackage("aws-c-http", upper_bound="x.x.x") }}
+    - ${{ pin_subpackage("aws-c-http", upper_bound="x.x") }}
 
 tests:
   - script:

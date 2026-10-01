@@ -1,11 +1,11 @@
 aws_c_cal:
-- 0.9.15
+- '1.0'
 aws_c_common:
-- 0.14.4
+- '1.0'
 aws_c_compression:
-- 0.3.2
+- '1.0'
 aws_c_io:
-- 0.27.5
+- '1.0'
 c_compiler:
 - vs2022
 c_stdlib:
